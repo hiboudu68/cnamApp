@@ -1,0 +1,15 @@
+exports.get = (req, res) => {
+
+const produits = [
+    {nom:"pile A" ,type: "électrique" ,prix:"2"},
+    {nom:"pile AA",type: "électrique" ,prix:"3"},
+    {nom:"pile AAA",type: "électrique" ,prix:"4"},
+    {nom:"Chaussure",type: "mobilier",prix:"10"},
+    {nom:"Lit",type: "mobilier",prix:"29"},
+    {nom:"Armoire",type: "mobilier",prix:"200"}
+]
+	  
+res.setHeader('Content-Type', 'application/json');
+res.send(produits);
+};    
+
