@@ -1,4 +1,5 @@
 module.exports = app => {  
-  require("./catalogue.routes")(app);
-  require("./utilisateur.routes")(app);
+    require("./creditcards.routes")(app);
+    require("./utilisateurs.routes")(app);
+    require("./produit.routes")(app);
 }
